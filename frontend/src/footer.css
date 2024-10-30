@@ -1,5 +1,7 @@
 /* Container for the footer items */
 .footerItem {
+  max-width: 1440px;
+  margin: 0 auto;
   margin-top: 100px; /* Add space above the footer */
   display: flex; /* Use flexbox to arrange items in a row */
   justify-content: space-between; /* Distribute space between items */
@@ -11,7 +13,7 @@
   font-size: 18px; /* Set font size for h4 elements */
   font-weight: 400; /* Set font weight to normal */
   color: #1C1C1C; /* Set text color to a dark gray */
-  padding: 20px 0; /* Add vertical padding */
+  padding: 0px 0; /* Add vertical padding */
 }
 
 .logoText p {
@@ -32,6 +34,7 @@
   text-decoration: none; /* Remove underline from links */
 }
 
+
 .logoText ul li a:hover {
   text-decoration: underline; /* Underline links on hover */
 }
@@ -51,6 +54,12 @@
 .lastpart {
   margin: 0 auto; /* Center the last part of the footer horizontally */
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background */
+
+}
+
+.lastpartcon{
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Vertically align items to the center */
   justify-content: space-between; /* Distribute space between items */

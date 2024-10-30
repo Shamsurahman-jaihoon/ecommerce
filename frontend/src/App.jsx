@@ -2,10 +2,13 @@ import { CertificatePage } from "./certificate"; // Importing the CertificatePag
 import { ContactForm } from "./contactUsPage"; // Importing the ContactForm component for handling contact form submissions
 import { Detailes } from "./detailes"; // Importing the Detailes component for displaying detailed information about a product or service
 import { HomePage } from "./home"; // Importing the HomePage component as the main landing page
-import { IncomPage } from "./incom"; // Importing the IncomPage component, which might be related to income or a specific section
+import { IncomPage } from "./about"; // Importing the IncomPage component, which might be related to income or a specific section
 import { Service1Page } from "./service1"; // Importing the Service1Page component for the first service page
 import { Service2Page } from "./service2"; // Importing the Service2Page component for the second service page
 import { Routes, Route } from "react-router-dom"; // Importing Routes and Route components from react-router-dom for routing
+import { Service3Page } from "./service3";
+import { Service4Page } from "./service4";
+import { Service5Page } from "./service5";
 
 function App() {
   return (
@@ -20,8 +23,11 @@ function App() {
         <Route exact path="/service1" element={<Service1Page />} />
         {/* Route for the second service page */}
         <Route exact path="/service2" element={<Service2Page />} />
+        <Route exact path="/service3" element={<Service3Page />} />
+        <Route exact path="/service4" element={<Service4Page/>} />
+        <Route exact path="/service5" element={<Service5Page />} />
         {/* Route for the incom page */}
-        <Route exact path="/incom" element={<IncomPage />} />
+        <Route exact path="/about" element={<IncomPage />} />
         {/* Route for the certificate page */}
         <Route exact path="/certificate" element={<CertificatePage />} />
         {/* Route for the contact form page */}
