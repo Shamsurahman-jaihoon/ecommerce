@@ -30,11 +30,11 @@ const CertificatePage = () => {
               size={50}
               style={{
                 position: "fixed",
-                bottom: "20px",
+                bottom: "40px",
                 right: "20px",
                 zIndex: 99,
                 cursor: "pointer",
-                padding: "10px",
+                padding: "50px",
                 borderRadius: "50%",
                 color: "white",
                 background: "linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%)",

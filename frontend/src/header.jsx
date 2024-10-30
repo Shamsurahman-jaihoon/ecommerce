@@ -1,9 +1,7 @@
 // Import the Navbar component from the 'component' directory
 import { Navbar } from "./component/navBar.jsx";
 
-// Import the CSS files for the Slick carousel library
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+
 
 // Import the Responsive component from the 'component' directory
 import { Responsive } from "./component/headerBanner.jsx";

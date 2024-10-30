@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* General Navbar Styles */
 .navbar {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%); /* Gradient background for the navbar */
     color: #070707; /* Text color */
-    padding: 1rem; /* Padding inside the navbar */
+    padding: 0.5rem 2.5rem; /* Padding inside the navbar */
     position: relative; /* Relative positioning for positioning children */
-    max-width: 1440px; /* Maximum width of the navbar */
     margin: 0 auto; /* Centering the navbar horizontally */
 }
 
@@ -13,6 +13,8 @@
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between items */
     align-items: center; /* Align items vertically */
+    max-width: 1440px;
+    margin:0 auto;
 }
 
 /* Navbar Logo Styles */
@@ -20,7 +22,19 @@
     font-size: 1.5rem; /* Font size for the logo */
     text-decoration: none; /* Remove underline from links */
 }
+.doy-pack-text{
+  text-align: end;  
+  color: white; /* White text */
+  font-size: 40px; /* Adjust as needed */
+  font-weight: 400; /* Bold text */
+  font-style: italic; /* Italic style */
+  font-family: "Lobster Two", sans-serif;
+   
+}
 
+.logo{
+    width: 80px;
+}
 /* Navbar Toggler for Mobile */
 .navbar-toggler {
     display: none; /* Hidden by default; shown on mobile */
@@ -51,15 +65,7 @@
     font-size: 2rem; /* Font size for the close icon */
 }
 
-/* Phone Icon Styles (e.g., for a contact link) */
-.phone-icone {
-    color: #e5750f; /* Phone icon color */
-}
 
-.phone-icone:hover {
-    color: #ffffff; /* Phone icon color */
-    transition: 1s;
-}
 
 /* Navbar Menu Styles */
 .navbar-menu {
@@ -71,9 +77,10 @@
 .navbar-item {
     color: #ffffff; /* Text color for items */
     text-decoration: none; /* Remove underline from links */
-    padding: 0.5rem; /* Padding around the items */
+    padding: 1rem; /* Padding around the items */
     position: relative; /* Relative positioning for dropdowns */
     cursor: pointer; /* Pointer cursor on hover */
+    font-size: 25px;
 }
 
 /* Hover State for Navbar Items */
@@ -109,6 +116,7 @@
     padding: 12px 16px; /* Padding inside dropdown items */
     text-decoration: none; /* Remove underline from links */
     display: block; /* Make dropdown items block elements */
+    font-size: 15px;
 }
 
 /* Hover State for Dropdown Items */
@@ -122,6 +130,26 @@
 .dropdown:hover .dropdown-menu {
     display: block; /* Show dropdown menu on hover */
 }
+
+
+/* Styles for the container holding social media icons */
+.iconsMedia {
+    text-align: center; /* Center align the icons */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for social media links */
+  .iconsMedia a {
+    color: #fff; /* Default icon color */
+    padding: 5px; /* Padding around the icons */
+  }
+  
+  /* Styles for social media links on hover */
+  .iconsMedia a:hover {
+    color: #e5750f; /* Change color on hover */
+    transition: 1s;
+  }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
@@ -146,4 +174,21 @@
     .navbar-toggler {
         display: block; /* Show toggler button */
     }
+
+    .doy-pack-text{
+        text-align: end;  
+        color: white; /* White text */
+        font-size: 30px; /* Adjust as needed */
+        font-weight: 400; /* Bold text */
+        font-style: italic; /* Italic style */
+        font-family: "Lobster Two", sans-serif;
+         
+      }
+
+      .logo{
+        width: 40px;
+
+    }
+
+
 }

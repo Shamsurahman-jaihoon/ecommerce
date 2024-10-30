@@ -1,8 +1,11 @@
 // Importing the CSS file for styling the ProAdvanCarts component
 import './proAdvan.css';
+import { useTranslation } from "react-i18next";
 
 // Functional component to display individual advantage cards
 const ProAdvanCarts = ({ img, heading }) => {
+     
+    const { t } = useTranslation();
     return (
         <>
             {/* Container for the entire advantage card */}
@@ -15,7 +18,7 @@ const ProAdvanCarts = ({ img, heading }) => {
                 {/* Container for the text section of the card */}
                 <div className="advanCartsText">
                     {/* Displaying the heading text for the advantage card */}
-                    <h2>{heading}</h2>
+                    <h2>{t(heading)}</h2>
                 </div>
             </div>
         </>
