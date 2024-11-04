@@ -36,7 +36,7 @@ export const ContactForm = () => {
     e.preventDefault(); // Prevent default form submission
     try {
       // Make a POST request to the backend with form data
-      const response = await fetch("http://127.0.0.1:8000/contact/", {
+      const response = await fetch("http://doypack.org/api/contact/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
